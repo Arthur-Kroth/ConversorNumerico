@@ -72,7 +72,7 @@ public class Conversor {
         if (frac > 0) {
             somaFrac += ",";
 
-            while (frac > 0 && somaFrac.length() <= 16) {
+            while (frac > 0 && somaFrac.length() <= 14) {
                 frac *= 2;
 
                 if (frac >= 1) {
@@ -100,7 +100,7 @@ public class Conversor {
         if (frac > 0) {
             somaFrac = ",";
             
-            while (frac > 0 && somaFrac.length() <= 16) {
+            while (frac > 0 && somaFrac.length() <= 14) {
                 frac *= 8;
                 int parteIntOct = (int) frac;
                 if (frac >= 1) {
@@ -125,7 +125,7 @@ public class Conversor {
         String somaFrac = "";
         if (frac > 1e-10) {
             somaFrac = ",";
-            int maxDigits = 16;
+            int maxDigits = 14;
             while (frac > 1e-10 && maxDigits-- > 0) {
                 frac *= 16;
                 int digito = (int) frac;
